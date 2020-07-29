@@ -37,13 +37,7 @@ class Artist
   def add_song(song)
     @songs << song
     song.artist = self
-    songs.each do |song|
-      add_song(song)
-    end
-  end
-
-  def add_songs(songs)
-    songs.each { |song| add_song(song) }
+    songs.each {|song|add_song(song)}
   end
 
   # def to_param
